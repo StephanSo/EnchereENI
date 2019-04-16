@@ -13,6 +13,20 @@
 
 <!--  content -->
 <div class="containter">
+	<div align="center" class="page-header">
+		<h1>Liste des enchères</h1>
+	</div>
+	
+	<form action="#">
+		<div class="form-group">
+			<h3>Filtres :</h3>
+			<div class="input-group">
+				<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+				<input id="motcle" type="text" class="form-control" name="motcle" placeholder="Le nom de l'article contient"/>
+			</div>
+    		
+		</div>
+	</form>
 
 </div>
 
