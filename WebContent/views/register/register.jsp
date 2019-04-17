@@ -23,7 +23,7 @@
 		<div class="col-xs-12 col-sm-12 col-md-0 col-lg-12" style="text-align:center">
 		<h1>Mon Profil</h1>
 		</div>
-	  	<form class="form-horizontal" action="#">
+	  	<form class="form-horizontal"  action="connexionServlet">
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 				<div class="form-group">
 					<label class="control-label col-sm-4" for="Pseudo">Pseudo :</label>
@@ -38,59 +38,59 @@
 					</div>
 				</div>
 				<div class="form-group">
-					<label class="control-label col-sm-4" for="Prenom">Téléphone :</label>
+					<label class="control-label col-sm-4" for="Telephone">Téléphone :</label>
 					<div class="col-sm-6">
-						<input type="tel" id="Telephone" name="Telephone" placeholder="0658489456" required class="form-control">
+						<input type="tel" id="telephone" name="telephone" placeholder="0658489456" required class="form-control">
 					</div>
 				</div>
 				<div class="form-group">
-					<label class="control-label col-sm-4" for="Prenom">Code postal :</label>
+					<label class="control-label col-sm-4" for="CP">Code postal :</label>
 					<div class="col-sm-6">
 						<input type="text" id="CP" name="CP" maxlength="5" required class="form-control">
 					</div>
 				</div>
 				<div class="form-group">
-					<label class="control-label col-sm-4" for="Prenom">Mot de passe :</label>
+					<label class="control-label col-sm-4" for="MDP">Mot de passe :</label>
 					<div class="col-sm-6">
-						<input type="password" id="Mdp" name="Mdp" required class="form-control">	
+						<input type="password" id="mdp" name="mdp" required class="form-control">	
 					</div>
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 				<div class="form-group">
-					<label class="control-label col-sm-4" for="Prenom">Nom :</label>
+					<label class="control-label col-sm-4" for="Nom">Nom :</label>
 					<div class="col-sm-6">
 						<input type="text" id="Nom" name="Nom" required class="form-control">
 					</div>
 				</div>
 				<div class="form-group">
-					<label class="control-label col-sm-4" for="Prenom">Email :</label>
+					<label class="control-label col-sm-4" for="Email">Email :</label>
 					<div class="col-sm-6">
-						<input type="email" id="Email" name="Email" class="form-control" placeholder="exemple@damine.com" pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z.]{2,15}" required >
+						<input type="email" id="Email" name="Email" class="form-control" placeholder="exemple@damine.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required >
 					</div>
 				</div>
 				<div class="form-group">
-					<label class="control-label col-sm-4" for="Prenom">Rue :</label>
+					<label class="control-label col-sm-4" for="Rue">Rue :</label>
 					<div class="col-sm-6">
 						<input type="text" id="Rue" name="Rue" required class="form-control">
 					</div>
 				</div>
 				<div class="form-group">
-					<label class="control-label col-sm-4" for="Prenom">Ville :</label>
+					<label class="control-label col-sm-4" for="Ville">Ville :</label>
 					<div class="col-sm-6">
 						<input type="text" id="Rue" name="Rue" required class="form-control">
 					</div>
 				</div>
 				<div class="form-group">
-					<label class="control-label col-sm-4" for="Prenom">Confirmation :</label>
+					<label class="control-label col-sm-4" for="Confir_MDP">Confirmation :</label>
 					<div class="col-sm-6">
-						<input type="password" id="MdpConf" name="MdpConf" required class="form-control">
+						<input type="password" id="confirm_mdp" name="confirm_mdp" required class="form-control">
 					</div>
 				</div>
 			</div> 
 			<div class="col-xs-12 col-sm-12 col-md-0 col-lg-12" style="text-align:center;">
 				<div class="col-xs-6">
-			      <button type="submit" class="btn btn btn-primary">Créer</button>
+			      <button type="submit" class="btn btn btn-primary" onclick="return valider_password()">Créer</button>
 			     </div>
 			     <div class="col-xs-6">
 			      <button type="reset" class="btn btn btn-primary" onclick="window.location.href='connexionServlet'">Annuler</button>
@@ -105,5 +105,6 @@
 
 <!--  finc ontent -->
 <%@include file="/views/layout/footer.jsp" %>
+<script src="js/register.js" ></script>
 </body>
 </html>
