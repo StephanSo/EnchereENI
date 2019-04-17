@@ -12,19 +12,35 @@
 
 
 <!--  content -->
-<div class="containter">
+<div class="container">
 	<div align="center" class="page-header">
 		<h1>Liste des enchères</h1>
 	</div>
 	
 	<form action="#">
-		<div class="form-group">
-			<h3>Filtres :</h3>
-			<div class="input-group">
-				<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-				<input id="motcle" type="text" class="form-control" name="motcle" placeholder="Le nom de l'article contient"/>
+		<div class="row">
+			<div class="form-group">
+				<div class="col-col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<h3>Filtres :</h3>
+					<div class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+						<input id="motcle" type="text" class="form-control" name="motcle" placeholder="Le nom de l'article contient"/>
+					</div>
+					<br />
+					<div class="input-group">
+						<span class="input-group-addon">Catégorie :</span>
+						<select class="form-control" name="categorie">
+							<option>1</option>
+							<option>1</option>
+							<option>1</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				<br /><br /><br /><br />
+					<input type="submit" value="Rechercher" class="btn btn-primary btn-lg btn-block"/>
+				</div>
 			</div>
-    		
 		</div>
 	</form>
 

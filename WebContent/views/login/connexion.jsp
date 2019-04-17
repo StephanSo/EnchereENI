@@ -48,6 +48,7 @@
 				</div>
 				<div class="col-md-3 col-lg-3"></div>
 			</div>
+			<a type="button" class="btn btn-primary" href="register" >Créer un compte</a>
 		</div>
 		
 		
