@@ -41,7 +41,10 @@
 					</div>
 				</form>
 			</main>
+			<a type="button" class="btn btn-primary" href="RegisterServlet" >Créer un compte</a>
 		</div>
+		
+		
 		<!--  finc ontent -->
 		<%@include file="/views/layout/footer.jsp" %>
 	</body>
