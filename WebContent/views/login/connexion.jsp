@@ -41,6 +41,13 @@
 					</div>
 				</form>
 			</main>
+			<div class="row">
+			<div class="col-md-3 col-lg-3"></div>
+				<div class="col-md-6 col-lg-6" align='center'>
+					<a type="button" class="btn btn-primary btn-lg" href="RegisterServlet" >Créer un compte</a>
+				</div>
+				<div class="col-md-3 col-lg-3"></div>
+			</div>
 			<a type="button" class="btn btn-primary" href="register" >Créer un compte</a>
 		</div>
 		
