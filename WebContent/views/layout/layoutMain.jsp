@@ -6,7 +6,7 @@
 			</div>
 			<ul class="nav navbar-nav navbar-right">
 					<li>
-						<a href="#">S'inscrire - Se connecter</a>
+						<a href="connexionServlet">S'inscrire - Se connecter</a>
 					</li>
 				</ul>
 		</div>
