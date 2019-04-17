@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class registerServlet
  */
-@WebServlet("/registerServlet")
+@WebServlet("/register")
 public class RegisterServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -26,8 +26,20 @@ public class RegisterServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+//		 TODO Auto-generated method stub
+//		javax.servlet.RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/formationsPage");
+//		dispatcher.forward(request,response);
+//		request.getRequestDispatcher("/connexion.jsp").forward(request, response);
+		
+		
+//		response.getWriter().append("Served at: ").append(request.getContextPath());
+		response.setHeader("test", "/views/register/register.jsp");
+		
+//		request.setAttribute("titre", "connexion");
+		this.getServletContext().getRequestDispatcher("/views/register/register.jsp").forward(request, response);
+//		
+//		HttpServletResponse.sendRedirect("c");
+//		
 	}
 
 	/**
