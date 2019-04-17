@@ -41,7 +41,7 @@
 					</div>
 				</form>
 			</main>
-			<a type="button" class="btn btn-primary" href="RegisterServlet" >Créer un compte</a>
+			<a type="button" class="btn btn-primary" href="register" >Créer un compte</a>
 		</div>
 		
 		
