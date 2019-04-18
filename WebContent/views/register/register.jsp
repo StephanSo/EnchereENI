@@ -90,7 +90,7 @@
 			</div> 
 			<div class="col-xs-12 col-sm-12 col-md-0 col-lg-12" style="text-align:center;">
 				<div class="col-xs-6">
-			      <button type="submit" class="btn btn btn-primary" onclick="return valider_password()">Créer</button>
+			      <button type="submit" class="btn btn btn-primary">Créer</button>
 			     </div>
 			     <div class="col-xs-6">
 			      <button type="reset" class="btn btn btn-primary" onclick="window.location.href='connexionServlet'">Annuler</button>
